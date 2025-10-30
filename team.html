@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet Our Team – YouGenIt</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
     section h2 {
       text-align: center;
       color: #005a9c;
@@ -18,23 +25,46 @@
     p {
       font-size: 0.9em;
     }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+    }
+
+    .team-member {
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .location {
+      text-align: center;
+      font-style: italic;
+      margin-top: 2em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <section>
     <h2>Meet Our Team</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 2em;">
-      <div style="flex: 1; min-width: 200px;">
+    <div class="team-grid">
+      <div class="team-member">
         <img src="team-member1.jpg" alt="Dr. Mandana AmeliMojarad" style="width: 100%; border-radius: 8px;" />
         <h3>Dr. Mandana AmeliMojarad</h3>
         <p>Founder & Educator<br>Passionate about student publishing and outreach.</p>
       </div>
-      <div style="flex: 1; min-width: 200px;">
+      <div class="team-member">
         <img src="team-member2.jpg" alt="Dr. Melika AmeliMojarad" style="width: 100%; border-radius: 8px;" />
         <h3>Dr. Melika AmeliMojarad</h3>
         <p>Design Lead<br>Brings creativity and clarity to YouGenIt’s visual identity.</p>
       </div>
-      <!-- Add more team members here -->
+    </div>
+    <div class="location">
+      Based in Paris, France
     </div>
   </section>
 </body>
